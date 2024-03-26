@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {Container} from "./styled.js";
 
 function CatsList() {
   const [catsData, setCatsData] = useState([]);
@@ -23,7 +24,7 @@ function CatsList() {
     <div>
       <h2>List Catzinhos</h2>
       {catsData.map((cat) => (
-        <div>
+        <Container>
           <img src={cat.image} alt={cat.name} style={{ maxWidth: "300px" }} />
           <h3>{cat.name}</h3>
           <p>Raça: {cat.race}</p>
@@ -32,7 +33,7 @@ function CatsList() {
           <p>Idade: {cat.age} anos</p>
           <p>Localização: {cat.location}</p>
           <p>Preço: ${cat.price}</p>
-        </div>
+        </Container>
       ))}
     </div>
   );
