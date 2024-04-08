@@ -1,7 +1,10 @@
+import { ContainerText } from './styledText.js';
+
 const Home = () => {
   return (
     <>
-      <h1>Home</h1>
+    <ContainerText>
+      <h2>How this dream started... </h2>
       <h2>
         Once upon a time, in a small town where cats were revered as magical
         creatures, there existed a sad reality: many of these feline friends
@@ -26,6 +29,7 @@ const Home = () => {
         for Luna and her kittens, that hope came in the form of someone willing
         to reach out and offer a second chance.
       </h2>
+      </ContainerText>
     </>
   );
 };

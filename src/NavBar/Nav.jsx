@@ -1,9 +1,10 @@
 import { Outlet, Link } from "react-router-dom";
+import { Navigation } from "./styleNav.js";
 
 const options = () => {
   return (
     <>
-      <nav>
+      <Navigation>
         <Link to="/">
           <button>Home</button>
         </Link>
@@ -11,7 +12,7 @@ const options = () => {
         <Link to="/shop">
           <button>Shop</button>
         </Link>
-      </nav>
+      </Navigation>
 
       <Outlet />
     </>

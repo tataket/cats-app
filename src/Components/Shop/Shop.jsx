@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {Container} from "./styled.js";
+import { Container } from "./styled.js";
+import { Link } from "react-router-dom";
 
 function CatsList() {
   const [catsData, setCatsData] = useState([]);
@@ -22,9 +23,9 @@ function CatsList() {
 
   return (
     <div>
-      <h2>List Catzinhos</h2>
-      {catsData.map((cat) => (
-        <Container>
+      <h2>Catzinhos</h2>
+      {catsData.map((cat, index) => (
+        <Container key={index}>
           <img src={cat.image} alt={cat.name} style={{ maxWidth: "300px" }} />
           <h3>{cat.name}</h3>
           <p>Raça: {cat.race}</p>
@@ -32,7 +33,9 @@ function CatsList() {
           <p>Peso: {cat.weight} kg</p>
           <p>Idade: {cat.age} anos</p>
           <p>Localização: {cat.location}</p>
-          <p>Preço: ${cat.price}</p>
+          <Link to={`/adocao/${cat.name}`}>
+            <button>Adopt</button>
+          </Link>
         </Container>
       ))}
     </div>

@@ -1,20 +1,22 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./NavBar/Nav.jsx";
-import Shop from "./Components/Shop/Shop.jsx";
 import Home from "./Components/Home/Home.jsx";
+import CatsList from "./Components/Shop/Shop.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FormAdoption from "./Components/Form/Form.jsx";
 
 function App() {
   return (
     <>
-      <h1>CATZINHOS SHOP</h1>
+      <h1>ADOPT KITTENS</h1>
       <BrowserRouter>
+      <Navbar />
         <Routes>
-          <Route path="/" element={<Navbar />}>
-            <Route index element={<Home />} />
-            <Route path="shop" element={<Shop />} />
-          </Route>
+        <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<CatsList />} />
+          <Route path="/adocao/:name" element={<FormAdoption />} />
+          <Route path="/cats" element={<CatsList />} />
         </Routes>
       </BrowserRouter>
     </>
