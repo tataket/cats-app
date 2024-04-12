@@ -6,8 +6,7 @@
       "weight": 10,
       "age": 23,
       "location": "Egypt",
-      "image": "https://img.freepik.com/free-photo/fluffy-kitten-sitting-grass-staring-sunset-playful-generated-by-artificial-intelligence_25030-67836.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 100
+      "image": "https://img.freepik.com/free-photo/fluffy-kitten-sitting-grass-staring-sunset-playful-generated-by-artificial-intelligence_25030-67836.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "2": {
       "race": "Maine Coon",
@@ -16,8 +15,7 @@
       "weight": 15,
       "age": 18,
       "location": "United States",
-      "image": "https://img.freepik.com/free-photo/cute-domestic-kitten-sitting-leaf-generative-ai_188544-8316.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 150
+      "image": "https://img.freepik.com/free-photo/cute-domestic-kitten-sitting-leaf-generative-ai_188544-8316.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "3": {
       "race": "Persian",
@@ -26,8 +24,7 @@
       "weight": 8,
       "age": 5,
       "location": "Iran",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-looking-camera-surrounded-by-snow-generated-by-artificial-intelligence_188544-84910.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 200
+      "image": "https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-looking-camera-surrounded-by-snow-generated-by-artificial-intelligence_188544-84910.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "4": {
       "race": "Sphynx",
@@ -36,8 +33,7 @@
       "weight": 6,
       "age": 2,
       "location": "Canada",
-      "image": "https://img.freepik.com/free-photo/close-up-cute-fluffy-kitten-staring-generative-ai_188544-9120.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 300
+      "image": "https://img.freepik.com/free-photo/close-up-cute-fluffy-kitten-staring-generative-ai_188544-9120.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "5": {
       "race": "Scottish Fold",
@@ -46,8 +42,7 @@
       "weight": 7,
       "age": 4,
       "location": "United Kingdom",
-      "image": "https://img.freepik.com/free-photo/cute-domestic-kitten-sits-window-staring-outside-generative-ai_188544-12519.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 250
+      "image": "https://img.freepik.com/free-photo/cute-domestic-kitten-sits-window-staring-outside-generative-ai_188544-12519.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "6": {
       "race": "Bengal",
@@ -56,8 +51,7 @@
       "weight": 12,
       "age": 6,
       "location": "India",
-      "image": "https://img.freepik.com/free-photo/cute-domestic-cat-staring-out-window-outdoors-generative-ai_188544-8406.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 180
+      "image": "https://img.freepik.com/free-photo/cute-domestic-cat-staring-out-window-outdoors-generative-ai_188544-8406.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "7": {
       "race": "Russian Blue",
@@ -66,8 +60,7 @@
       "weight": 9,
       "age": 3,
       "location": "Russia",
-      "image": "https://img.freepik.com/premium-photo/cute-animal-cats-cat-lovers-june-4-international-cat-hugging-day-march-22-japan-cat-day_10221-17970.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 220
+      "image": "https://img.freepik.com/premium-photo/cute-animal-cats-cat-lovers-june-4-international-cat-hugging-day-march-22-japan-cat-day_10221-17970.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "8": {
       "race": "Ragdoll",
@@ -76,8 +69,7 @@
       "weight": 11,
       "age": 7,
       "location": "Australia",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-staring-out-window-curious-generative-ai_188544-12518.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 280
+      "image": "https://img.freepik.com/free-photo/cute-kitten-staring-out-window-curious-generative-ai_188544-12518.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "9": {
       "race": "Abyssinian",
@@ -86,8 +78,7 @@
       "weight": 5,
       "age": 1,
       "location": "Ethiopia",
-      "image": "https://img.freepik.com/free-photo/curious-cats-playing-tunnels-tubes_60438-3454.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 320
+      "image": "https://img.freepik.com/free-photo/curious-cats-playing-tunnels-tubes_60438-3454.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "10": {
       "race": "British Shorthair",
@@ -96,8 +87,7 @@
       "weight": 9,
       "age": 4,
       "location": "United Kingdom",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-staring-with-striped-fur-black-background-generative-ai_188544-9659.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 230
+      "image": "https://img.freepik.com/free-photo/cute-kitten-staring-with-striped-fur-black-background-generative-ai_188544-9659.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "11": {
       "race": "Siamese",
@@ -106,8 +96,7 @@
       "weight": 8,
       "age": 3,
       "location": "Thailand",
-      "image": "https://img.freepik.com/free-photo/cute-cat-wearing-karate-cloths-generative-ai_8829-2905.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 180
+      "image": "https://img.freepik.com/free-photo/cute-cat-wearing-karate-cloths-generative-ai_8829-2905.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "12": {
       "race": "Maine Coon",
@@ -116,8 +105,7 @@
       "weight": 14,
       "age": 5,
       "location": "United States",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-staring-sunset-fluffy-fur-generated-by-artificial-intelligence_188544-85045.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 270
+      "image": "https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-staring-sunset-fluffy-fur-generated-by-artificial-intelligence_188544-85045.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "13": {
       "race": "Persian",
@@ -126,8 +114,7 @@
       "weight": 7,
       "age": 2,
       "location": "Iran",
-      "image": "https://img.freepik.com/free-photo/cats-enjoying-exploration-through-tunnels_60438-3545.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 300
+      "image": "https://img.freepik.com/free-photo/cats-enjoying-exploration-through-tunnels_60438-3545.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "14": {
       "race": "Sphynx",
@@ -136,8 +123,7 @@
       "weight": 6,
       "age": 1,
       "location": "Canada",
-      "image": "https://img.freepik.com/free-photo/cute-puppy-portrait-domestic-purebred-fluffy-adorable-terrier-generated-by-ai_188544-15633.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 350
+      "image": "https://img.freepik.com/free-photo/cute-puppy-portrait-domestic-purebred-fluffy-adorable-terrier-generated-by-ai_188544-15633.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "15": {
       "race": "Scottish Fold",
@@ -146,8 +132,7 @@
       "weight": 8,
       "age": 3,
       "location": "United Kingdom",
-      "image": "https://img.freepik.com/free-photo/cute-cat-laying-grass_23-2150385852.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 240
+      "image": "https://img.freepik.com/free-photo/cute-cat-laying-grass_23-2150385852.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "16": {
       "race": "Bengal",
@@ -156,8 +141,7 @@
       "weight": 10,
       "age": 4,
       "location": "India",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-looking-camera-playful-with-robotic-toy-generated-by-artificial-intelligence_188544-85049.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 200
+      "image": "https://img.freepik.com/free-photo/cute-kitten-looking-camera-playful-with-robotic-toy-generated-by-artificial-intelligence_188544-85049.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "17": {
       "race": "Russian Blue",
@@ -166,8 +150,7 @@
       "weight": 9,
       "age": 2,
       "location": "Russia",
-      "image": "https://img.freepik.com/free-photo/cute-cat-scifi-space-wallpaper_1409-6912.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 210
+      "image": "https://img.freepik.com/free-photo/cute-cat-scifi-space-wallpaper_1409-6912.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "18": {
       "race": "Ragdoll",
@@ -176,8 +159,7 @@
       "weight": 10,
       "age": 6,
       "location": "Australia",
-      "image": "https://img.freepik.com/free-photo/beautiful-fluffy-cat-bed-generative-ai_169016-28980.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 290
+      "image": "https://img.freepik.com/free-photo/beautiful-fluffy-cat-bed-generative-ai_169016-28980.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "19": {
       "race": "Abyssinian",
@@ -186,8 +168,7 @@
       "weight": 6,
       "age": 1,
       "location": "Ethiopia",
-      "image": "https://img.freepik.com/premium-photo/cat-with-dragon-head_855221-535.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 330
+      "image": "https://img.freepik.com/premium-photo/cat-with-dragon-head_855221-535.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "20": {
       "race": "British Shorthair",
@@ -196,8 +177,7 @@
       "weight": 7,
       "age": 2,
       "location": "United Kingdom",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-staring-fluffy-fur-playful-nature-beautiful-animal-generated-by-artificial-intelligence_188544-85072.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 250
+      "image": "https://img.freepik.com/free-photo/cute-kitten-staring-fluffy-fur-playful-nature-beautiful-animal-generated-by-artificial-intelligence_188544-85072.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "21": {
       "race": "Siamese",
@@ -206,8 +186,7 @@
       "weight": 9,
       "age": 5,
       "location": "Thailand",
-      "image": "https://img.freepik.com/free-photo/sketch-drawing-cat_1268-30458.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 190
+      "image": "https://img.freepik.com/free-photo/sketch-drawing-cat_1268-30458.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "22": {
       "race": "Maine Coon",
@@ -216,8 +195,7 @@
       "weight": 16,
       "age": 6,
       "location": "United States",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-stares-camera-with-playful-curiosity-generated-by-ai_188544-19723.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 280
+      "image": "https://img.freepik.com/free-photo/cute-kitten-stares-camera-with-playful-curiosity-generated-by-ai_188544-19723.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "23": {
       "race": "Persian",
@@ -226,8 +204,7 @@
       "weight": 12,
       "age": 3,
       "location": "Iran",
-      "image": "https://img.freepik.com/premium-photo/galaxies-spirals-space-nebulae-stars-smoke-iridescent_777271-5576.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 320
+      "image": "https://img.freepik.com/premium-photo/galaxies-spirals-space-nebulae-stars-smoke-iridescent_777271-5576.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "24": {
       "race": "Sphynx",
@@ -236,8 +213,7 @@
       "weight": 7,
       "age": 2,
       "location": "Canada",
-      "image": "https://img.freepik.com/free-photo/futuristic-cat-concept_23-2150969503.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 330
+      "image": "https://img.freepik.com/free-photo/futuristic-cat-concept_23-2150969503.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "25": {
       "race": "Scottish Fold",
@@ -246,8 +222,7 @@
       "weight": 9,
       "age": 4,
       "location": "United Kingdom",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-with-fluffy-fur-looking-camera-outdoors-generated-by-artificial-intelligence_25030-67792.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 260
+      "image": "https://img.freepik.com/free-photo/cute-kitten-with-fluffy-fur-looking-camera-outdoors-generated-by-artificial-intelligence_25030-67792.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "26": {
       "race": "Bengal",
@@ -256,8 +231,7 @@
       "weight": 11,
       "age": 5,
       "location": "India",
-      "image": "https://img.freepik.com/free-photo/cute-furry-cat-relaxing-indoors_23-2150679190.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 210
+      "image": "https://img.freepik.com/free-photo/cute-furry-cat-relaxing-indoors_23-2150679190.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "27": {
       "race": "Russian Blue",
@@ -266,8 +240,7 @@
       "weight": 8,
       "age": 3,
       "location": "Russia",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-sitting-grass-looking-camera-outdoors-generated-by-artificial-intelligence_25030-66133.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 220
+      "image": "https://img.freepik.com/free-photo/cute-kitten-sitting-grass-looking-camera-outdoors-generated-by-artificial-intelligence_25030-66133.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "28": {
       "race": "Ragdoll",
@@ -276,8 +249,7 @@
       "weight": 10,
       "age": 7,
       "location": "Australia",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-resting-grass-enjoying-autumn-sunlight-generated-by-artificial-intelligence_25030-63228.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 300
+      "image": "https://img.freepik.com/free-photo/cute-kitten-resting-grass-enjoying-autumn-sunlight-generated-by-artificial-intelligence_25030-63228.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "29": {
       "race": "Abyssinian",
@@ -286,8 +258,7 @@
       "weight": 6,
       "age": 2,
       "location": "Ethiopia",
-      "image": "https://img.freepik.com/free-photo/cute-kitten-with-pumpkin-lantern-celebrating-spooky-halloween-night-generated-by-artificial-intellingence_25030-63935.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 350
+      "image": "https://img.freepik.com/free-photo/cute-kitten-with-pumpkin-lantern-celebrating-spooky-halloween-night-generated-by-artificial-intellingence_25030-63935.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     },
     "30": {
       "race": "British Shorthair",
@@ -296,7 +267,6 @@
       "weight": 8,
       "age": 3,
       "location": "United Kingdom",
-      "image": "https://img.freepik.com/free-photo/winter-mood-beautiful-kitten-siberian-cat-sitting-sofa-new-year-decoration_155003-24250.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
-      "price": 270
+      "image": "https://img.freepik.com/free-photo/winter-mood-beautiful-kitten-siberian-cat-sitting-sofa-new-year-decoration_155003-24250.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais"
     }
   }

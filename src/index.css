@@ -5,7 +5,12 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #b5a2a275;
+  background-blend-mode: multiply;
+  background-image: url("./assets/Images/fundo-plano-internacional-do-dia-do-gato-com-patas-de-gato_23-2149459818.avif");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

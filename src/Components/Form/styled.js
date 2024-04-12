@@ -14,19 +14,12 @@ color: #000;
 
 h2 {
   color: #000;
-  font-family: 'Allura', cursive;
+  font-family: 'Arial', sans-serif;
   margin-bottom: 20px;
 }
 
 form {
   width: 100%;
-}
-
-label {
-  color: #000;
-  font-size: 16px;
-  margin-bottom: 5px;
-  display: block;
 }
 
 input,
@@ -37,6 +30,10 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+input:disabled {
+  color: rgba(255, 255, 255)
 }
 
 button {

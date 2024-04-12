@@ -1,17 +1,17 @@
-import { Outlet, Link } from "react-router-dom";
-import { Navigation } from "./styleNav.js";
+import { Outlet } from "react-router-dom";
+import { Navigation, StyledLink, StyledButtonLink} from "./styled.js";
 
 const options = () => {
   return (
     <>
       <Navigation>
-        <Link to="/">
-          <button>Home</button>
-        </Link>
+        <StyledLink to="/">
+          <StyledButtonLink>Home</StyledButtonLink>
+        </StyledLink>
 
-        <Link to="/shop">
-          <button>Shop</button>
-        </Link>
+        <StyledLink to="/shop">
+          <StyledButtonLink>Shop</StyledButtonLink>
+        </StyledLink>
       </Navigation>
 
       <Outlet />
