@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import catDb from "../Cats/cats.json";
+import {
+  CatDetailsContainer,
+  CatImage,
+  CatDetails,
+  CatName,
+  ReturnButton,
+  AdoptButton,
+  ButtonContainer
+} from "./styled.js";
 
 function CatsInfo() {
   const { name } = useParams();
@@ -12,27 +21,26 @@ function CatsInfo() {
   }, [name]);
 
   return (
-    <>
+    <CatDetailsContainer>
       {catState ? (
         <div>
-          <h1>{catState.name}</h1>
-          <img src={catState.image} alt="cat" />
-          <p>Race: {catState.race}</p>
-          <p>Color: {catState.color}</p>
-          <p>Weight: {catState.weight} kg</p>
-          <p>Age: {catState.age}</p>
-          <p>Location: {catState.location}</p>
-          <Link to="/shop">
-            <button>Return</button>
-          </Link>
-          <Link to={`/adocao/${catState.name}`}>
-            <button>Adopt Me?</button>
-          </Link>
+          <CatName>{catState.name}</CatName>
+          <CatImage src={catState.image} alt="cat" />
+          <CatDetails>Race: {catState.race}</CatDetails>
+          <CatDetails>Color: {catState.color}</CatDetails>
+          <CatDetails>Weight: {catState.weight} kg</CatDetails>
+          <CatDetails>Age: {catState.age}</CatDetails>
+          <CatDetails>Location: {catState.location}</CatDetails>
+          <ButtonContainer>
+          <ReturnButton to="/shop">
+            Return</ReturnButton>
+          <AdoptButton to={`/adocao/${catState.name}`}>Adopt Me?</AdoptButton>
+          </ButtonContainer>
         </div>
       ) : (
         <p>Loading...</p>
       )}
-    </>
+    </CatDetailsContainer>
   );
 }
 

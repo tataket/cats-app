@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Cats from "../Cats/cats.json";
 import Card from "../../Components/Cards/Cards";
-import { ShopContainer } from "./styled.js";
+import { ShopContainer, PageNumber, ButtonGroup, Button } from "./styled.js";
 
 function CatsList() {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ function CatsList() {
     const storedPage = localStorage.getItem("currentPage");
     return storedPage ? parseInt(storedPage) : 1;
   });
-  const catsPerPage = 5;
+  const catsPerPage = 8;
 
   useEffect(() => {
     setCatsData(Object.values(Cats));
@@ -56,21 +56,20 @@ function CatsList() {
 
   return (
     <>
-      <h2>Catzinhos</h2>
       <ShopContainer>
         {currentCats.map((cat, index) => (
           <Card key={index} {...cat} />
         ))}
       </ShopContainer>
-      <div>
-        <button onClick={prevPage} disabled={currentPage === 1}>
-          Anterior
-        </button>
-        <span>Página {currentPage}</span>
-        <button onClick={nextPage} disabled={indexOfLastCat >= catsData.length}>
-          Próxima
-        </button>
-      </div>
+      <ButtonGroup>
+        <Button onClick={prevPage} disabled={currentPage === 1}>
+          Back
+        </Button>
+        <PageNumber>{currentPage}</PageNumber>
+        <Button onClick={nextPage} disabled={indexOfLastCat >= catsData.length}>
+          Next
+        </Button>
+      </ButtonGroup>
     </>
   );
 }

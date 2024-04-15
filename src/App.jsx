@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from "react";
 import "./App.css";
-import Navbar from "./NavBar/Nav.jsx";
+import Navbar from "./Components/NavBar/Nav.jsx";
 import Home from "./Components/Home/Home.jsx";
 import Shop from "./Components/Shop/Shop.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FormAdoption from "./Components/Form/Form.jsx";
 import CatsInfo from "./Components/CatsInfo/CatsInfo.jsx";
+import { Provider } from 'react-redux';
+import store from "./Components/Form/store.js";
+import { MainTitle } from "./styled.js";
 
 function App() {
   return (
     <>
-      <h1>ADOPT KITTENS</h1>
+      <MainTitle>ADOPT KITTENS</MainTitle>
+      <Provider store={store}>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -20,6 +23,7 @@ function App() {
           <Route path="/info/:name" element={<CatsInfo />} />
         </Routes>
       </BrowserRouter>
+      </Provider>
     </>
   );
 }

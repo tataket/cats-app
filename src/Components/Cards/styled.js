@@ -9,7 +9,6 @@ export const Container = styled.div`
   border-radius: 9px;
   background-color: rgba(255, 255, 255, 0.8);
   color: rgba(0, 0, 0, 0.8);
-  width: 40%;
   `;
 
 export const Text = styled.h3`
@@ -26,6 +25,8 @@ export const StyledLink = styled(Link)`
 
 export const ImageCat = styled.img`
   border-radius: 9px;
+  width: 100%;
+  height: auto;
   max-width: 300px;
   transition: transform 0.3s ease-in-out;
   &:hover {

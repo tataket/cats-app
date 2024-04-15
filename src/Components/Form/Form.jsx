@@ -1,108 +1,148 @@
-import React, { useState, useEffect } from "react";
-import { FormWrapper } from "./styled.js";
+import React, { useEffect, useState} from "react";
+import {
+  Form,
+  FormTitle,
+  FormWrapper,
+  CatInfoWrapper,
+  CatInfoInput,
+  AdoptionInput,
+  AdoptionTextArea,
+  AdoptionButton,
+  ModalWrapper,
+  ModalContent,
+  CloseButton,
+  CatInfoLabel,
+  SuccessMessage,
+  LoadingMessage
+} from "./styled.js";
 import catDb from "../Cats/cats.json";
 import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setCatData,
+  setUserName,
+  setEmail,
+  setMessage,
+  clearForm,
+} from "./formSlice";
 
-const formAdoption = () => {
+const FormAdoption = () => {
+  const dispatch = useDispatch();
   const { name } = useParams();
-  const [catData, setCatData] = useState(null);
-  const [nomeAdotante, setNomeAdotante] = useState("");
-  const [emailAdotante, setEmailAdotante] = useState("");
-  const [mensagem, setMensagem] = useState("");
+  const { catData, username, email, message } = useSelector(
+    (state) => state.form
+  );
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   useEffect(() => {
     const findCat = Object.values(catDb).find((cat) => cat.name === name);
     if (findCat) {
-      setCatData(findCat);
+      dispatch(setCatData(findCat));
     }
-  }, [name]);
+  }, [name, dispatch]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log("Dados do formulário:");
-    console.log("Nome do adotante:", nomeAdotante);
-    console.log("Email do adotante:", emailAdotante);
-    console.log("Mensagem:", mensagem);
+    if (catData.name && username && email && message) {
+      setIsModalOpen(true);
+      setIsFormSubmitted(true);
+    } else {
+      alert("Please, fill in all required fields.");
+    }
+  };
 
-    setNomeAdotante("");
-    setEmailAdotante("");
-    setMensagem("");
+  const closeModal = () => {
+    setIsModalOpen(false);
+    dispatch(clearForm()); 
   };
 
   return (
     <FormWrapper>
       {catData ? (
         <>
-          <h2>Form Adoption {catData.name}</h2>
-          <div>
-          <input
-                type="text"
-                id="race"
-                defaultValue={catData.race}
-                disabled
-                placeholder="Race"
-              />
-              <input
-                type="text"
-                id="age"
-                defaultValue={catData.age}
-                disabled
-                placeholder="Age:"
-              />
-              <input
-                type="text"
-                id="color"
-                defaultValue={catData.color}
-                disabled
-                placeholder="Color:"
-              />
-              <input
-                type="text"
-                id="weight"
-                defaultValue={catData.weight}
-                disabled
-                placeholder="Weight:"
-              />
-              <input
-                type="text"
-                id="location"
-                defaultValue={catData.location}
-                disabled
-                placeholder="Location:"
-              />
-          </div>
-          <div>
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                id="nomeAdotante"
-                value={nomeAdotante}
-                onChange={(e) => setNomeAdotante(e.target.value)}
+          <FormTitle >Form Adoption {catData.name}</FormTitle >
+          <CatInfoWrapper>
+            <CatInfoLabel>
+            Race
+            </CatInfoLabel>
+            <CatInfoInput
+              type="text" 
+              value={catData.race}
+              disabled
+              placeholder="Race"
+            />
+             <CatInfoLabel>
+             Age
+              </CatInfoLabel>
+            <CatInfoInput
+              type="text" 
+              value={catData.age}
+              disabled
+              placeholder="Age"
+            />
+             <CatInfoLabel>
+             Color
+              </CatInfoLabel>
+            <CatInfoInput
+              type="text"
+              value={catData.color}
+              disabled
+              placeholder="Color"
+            />
+             <CatInfoLabel>
+             Weight
+              </CatInfoLabel>
+            <CatInfoInput
+              type="text"
+              value={catData.weight}
+              disabled
+              placeholder="Weight"
+            />
+             <CatInfoLabel>
+             Location
+              </CatInfoLabel>
+            <CatInfoInput
+              type="text"
+              value={catData.location}
+              disabled
+              placeholder="Location"
+            />
+          </CatInfoWrapper>
+            <Form onSubmit={handleSubmit}>
+              <AdoptionInput
+                type="text" 
+                value={username}
+                onChange={(e) => dispatch(setUserName(e.target.value))}
                 placeholder="Name"
               />
-              <input
+              <AdoptionInput
                 type="email"
-                id="emailAdotante"
-                value={emailAdotante}
-                onChange={(e) => setEmailAdotante(e.target.value)}
+                value={email}
+                onChange={(e) => dispatch(setEmail(e.target.value))}
                 placeholder="Email"
               />
-              <textarea
-                id="mensagem"
-                value={mensagem}
-                onChange={(e) => setMensagem(e.target.value)}
+              <AdoptionTextArea
+                value={message}
+                onChange={(e) => dispatch(setMessage(e.target.value))}
                 placeholder="Message"
               />
-              <button type="submit">Submit</button>
-            </form>
-          </div>
+              <AdoptionButton type="submit">Submit</AdoptionButton>
+            </Form>
+          <ModalWrapper isOpen={isModalOpen}>
+        <ModalContent>
+          <CloseButton onClick={closeModal}>&times;</CloseButton>
+          <SuccessMessage>Form sent successfully!</SuccessMessage>
+        </ModalContent>
+      </ModalWrapper>
         </>
       ) : (
-        <p>Loading...</p>
+        <LoadingMessage>Loading...</LoadingMessage>
       )}
     </FormWrapper>
   );
 };
 
-export default formAdoption;
+export default FormAdoption;

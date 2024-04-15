@@ -1,5 +1,4 @@
 import { Container, StyledButton , ImagePaw, ImageCat, StyledLink, Text } from "./styled.js";
-
 import CatImg from "./../../assets/Images/cat.png";
 
 function CardsCats({ image, name }) {
