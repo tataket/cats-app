@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import {
   Form,
   FormTitle,
@@ -13,7 +13,7 @@ import {
   CloseButton,
   CatInfoLabel,
   SuccessMessage,
-  LoadingMessage
+  LoadingMessage,
 } from "./styled.js";
 import catDb from "../Cats/cats.json";
 import { useParams } from "react-router-dom";
@@ -56,54 +56,44 @@ const FormAdoption = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    dispatch(clearForm()); 
+    dispatch(clearForm());
   };
 
   return (
     <FormWrapper>
       {catData ? (
         <>
-          <FormTitle >Form Adoption {catData.name}</FormTitle >
+          <FormTitle>Form Adoption {catData.name}</FormTitle>
           <CatInfoWrapper>
-            <CatInfoLabel>
-            Race
-            </CatInfoLabel>
+            <CatInfoLabel>Race</CatInfoLabel>
             <CatInfoInput
-              type="text" 
+              type="text"
               value={catData.race}
               disabled
               placeholder="Race"
             />
-             <CatInfoLabel>
-             Age
-              </CatInfoLabel>
+            <CatInfoLabel>Age</CatInfoLabel>
             <CatInfoInput
-              type="text" 
+              type="text"
               value={catData.age}
               disabled
               placeholder="Age"
             />
-             <CatInfoLabel>
-             Color
-              </CatInfoLabel>
+            <CatInfoLabel>Color</CatInfoLabel>
             <CatInfoInput
               type="text"
               value={catData.color}
               disabled
               placeholder="Color"
             />
-             <CatInfoLabel>
-             Weight
-              </CatInfoLabel>
+            <CatInfoLabel>Weight</CatInfoLabel>
             <CatInfoInput
               type="text"
               value={catData.weight}
               disabled
               placeholder="Weight"
             />
-             <CatInfoLabel>
-             Location
-              </CatInfoLabel>
+            <CatInfoLabel>Location</CatInfoLabel>
             <CatInfoInput
               type="text"
               value={catData.location}
@@ -111,32 +101,34 @@ const FormAdoption = () => {
               placeholder="Location"
             />
           </CatInfoWrapper>
-            <Form onSubmit={handleSubmit}>
-              <AdoptionInput
-                type="text" 
-                value={username}
-                onChange={(e) => dispatch(setUserName(e.target.value))}
-                placeholder="Name"
-              />
-              <AdoptionInput
-                type="email"
-                value={email}
-                onChange={(e) => dispatch(setEmail(e.target.value))}
-                placeholder="Email"
-              />
-              <AdoptionTextArea
-                value={message}
-                onChange={(e) => dispatch(setMessage(e.target.value))}
-                placeholder="Message"
-              />
-              <AdoptionButton type="submit">Submit</AdoptionButton>
-            </Form>
+          <Form onSubmit={handleSubmit}>
+            <AdoptionInput
+              type="text"
+              value={username}
+              onChange={(e) => dispatch(setUserName(e.target.value))}
+              placeholder="Name"
+            />
+            <AdoptionInput
+              type="email"
+              value={email}
+              onChange={(e) => dispatch(setEmail(e.target.value))}
+              placeholder="Email"
+            />
+            <AdoptionTextArea
+              value={message}
+              onChange={(e) => dispatch(setMessage(e.target.value))}
+              placeholder="Message"
+            />
+            <AdoptionButton type="submit">Submit</AdoptionButton>
+          </Form>
           <ModalWrapper isOpen={isModalOpen}>
-        <ModalContent>
-          <CloseButton onClick={closeModal}>&times;</CloseButton>
-          <SuccessMessage>Form sent successfully!</SuccessMessage>
-        </ModalContent>
-      </ModalWrapper>
+            <ModalContent>
+              <CloseButton onClick={closeModal}>&times;</CloseButton>
+              <SuccessMessage>
+                Your adoption application form has been successfully submitted!
+              </SuccessMessage>
+            </ModalContent>
+          </ModalWrapper>
         </>
       ) : (
         <LoadingMessage>Loading...</LoadingMessage>

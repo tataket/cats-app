@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const ContainerText = styled.div`
   padding: 20px;
@@ -69,31 +69,4 @@ export const ImgCats = styled.img`
   margin-bottom: 20px;
   height: auto;
   border-radius: 10px;
-`;
-
-export const ImgMarquee = styled.img`
-  border-radius: 9px;
-  margin-right: 20px;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const MarqueeContainer = styled.div`
-  width: 100%;
-  overflow: hidden;
-`;
-
-const marquee = keyframes`
-display: inline-block;
-white-space: nowrap;
-animation: 10s linear infinite;
-
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 `;

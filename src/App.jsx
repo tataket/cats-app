@@ -12,7 +12,7 @@ import { MainTitle } from "./styled.js";
 function App() {
   return (
     <>
-      <MainTitle>ADOPT KITTENS</MainTitle>
+      <MainTitle>Cats Catzinhos</MainTitle>
       <Provider store={store}>
       <BrowserRouter>
         <Navbar />

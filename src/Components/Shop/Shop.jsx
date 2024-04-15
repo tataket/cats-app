@@ -12,7 +12,7 @@ function CatsList() {
     const storedPage = localStorage.getItem("currentPage");
     return storedPage ? parseInt(storedPage) : 1;
   });
-  const catsPerPage = 8;
+  const catsPerPage = 10;
 
   useEffect(() => {
     setCatsData(Object.values(Cats));

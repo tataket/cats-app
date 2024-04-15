@@ -1,18 +1,16 @@
 import styled from "styled-components";
 
 export const ShopContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
   align-items: stretch;
   row-gap: 10px;
   column-gap: 20px;
   font-size: 2rem;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
     font-size: 1.5rem;
   }
 `;

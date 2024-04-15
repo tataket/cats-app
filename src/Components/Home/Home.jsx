@@ -1,12 +1,4 @@
-import {
-  ContainerText,
-  Text,
-  Title,
-  FinalText,
-  ImgMarquee,
-  MarqueeContainer,
-  ImgCats,
-} from "./styled.js";
+import { ContainerText, Text, Title, FinalText, ImgCats } from "./styled.js";
 import React, { useEffect, useState } from "react";
 import CatsFamily from "./../../assets/Images/gatinhos.jpeg";
 import jsonData from "../Cats/cats.json";
@@ -33,19 +25,6 @@ const Home = () => {
         <FinalText>Ready to embark on this journey together?!</FinalText>
       </ContainerText>
       {<ImgCats src={CatsFamily} style={{ marginBottom: "20px" }} />}
-
-      <MarqueeContainer>
-        <marquee>
-          {catImages.map((image, index) => (
-            <ImgMarquee
-              key={index}
-              src={image}
-              alt={`Cat ${index + 1}`}
-              style={{ marginRight: "20px" }}
-            />
-          ))}
-        </marquee>
-      </MarqueeContainer>
     </>
   );
 };
